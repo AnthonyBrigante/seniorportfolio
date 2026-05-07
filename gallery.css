@@ -1,0 +1,87 @@
+:root {
+    --bg: #0a0a0c;
+    --card-bg: #16161a;
+    --accent: #8a2be2;
+    --text: #ffffff;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding-bottom: 100px;
+}
+
+.gallery-header {
+    padding: 60px 10% 20px;
+}
+
+.back-link {
+    text-decoration: none;
+    color: var(--accent);
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.back-link:hover { opacity: 0.7; transform: translateX(-5px); }
+
+/* The Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 40px;
+    padding: 0 10%;
+}
+
+/* The Cards */
+.project-card {
+    background: var(--card-bg);
+    border-radius: 20px;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgba(255,255,255,0.05);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Card Screenshot */
+.card-image {
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    background-position: top center;
+    border-bottom: 3px solid transparent;
+    transition: 0.4s;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card-content h3 {
+    margin: 0 0 12px 0;
+    font-size: 1.4rem;
+}
+
+.card-content p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    opacity: 0.7;
+}
+
+/* Hover Effects */
+.project-card:hover {
+    transform: translateY(-15px);
+    border-color: var(--accent);
+    box-shadow: 0 20px 40px rgba(138, 43, 226, 0.2);
+}
+
+.project-card:hover .card-image {
+    border-color: var(--accent);
+    filter: brightness(1.1);
+}

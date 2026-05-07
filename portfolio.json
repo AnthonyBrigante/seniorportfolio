@@ -1,0 +1,47 @@
+{
+  "chapters": [
+    {
+      "id": "prologue",
+      "title": "Every designer starts somewhere...",
+      "description": "This is my journey of evolution. Three years of turning curiosity into code.",
+      "buttonText": "Begin Journey"
+    },
+    {
+      "id": "year1",
+      "title": "Year 1: The Foundations",
+      "description": "I started with a blank screen and a lot of questions. This year was about mastering the languages of the web: HTML and CSS.",
+      "reflection": "Looking back, my code was messy, but my passion was high. I learned that structure is everything—without a solid foundation, a beautiful design will eventually fall apart.",
+      "skills": [
+        { "name": "Semantic HTML", "level": "90%" },
+        { "name": "Basic CSS Layouts", "level": "70%" }
+      ]
+    },
+    {
+      "id": "year2",
+      "title": "Year 2: The Logic Leap",
+      "description": "Things started clicking. I moved beyond static pages and dove into the world of JavaScript and interactivity.",
+      "reflection": "This was the 'frustration year.' Learning logic taught me that coding is 90% problem-solving and 10% typing. I moved from making things look good to making things work.",
+      "skills": [
+        { "name": "JavaScript Logic", "level": "65%" },
+        { "name": "Responsive Design", "level": "85%" }
+      ]
+    },
+    {
+      "id": "year3",
+      "title": "Year 3: The Polished Professional",
+      "description": "Now, I focus on user experience, performance, and clean, modern aesthetics.",
+      "reflection": "I no longer just build websites; I build experiences. My focus has shifted to the user—how they feel, how they move, and how I can make their journey seamless.",
+      "skills": [
+        { "name": "UI/UX Strategy", "level": "80%" },
+        { "name": "Modern Frameworks", "level": "60%" }
+      ]
+    },
+    {
+      "id": "future",
+      "title": "The Next Chapter",
+      "description": "My journey doesn't end here. I'm ready to take these skills to the next level.",
+      "buttonText": "Explore My Portfolio",
+      "buttonLink": "gallery.html"
+    }
+  ]
+}

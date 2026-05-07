@@ -1,0 +1,147 @@
+:root {
+    --accent: #8a2be2;
+    --glass: rgba(255, 255, 255, 0.05);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #050505; /* Default start color */
+    color: white;
+    font-family: 'Inter', sans-serif;
+    transition: background-color 1s ease, color 0.5s ease;
+    overflow-x: hidden;
+}
+
+/* --- THE SECRET SAUCE --- */
+section {
+    width: 100%;
+    min-height: 100vh; /* Each section is at least the full height of the screen */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center;     /* Centers content horizontally */
+    text-align: center;
+    padding: 100px 10%;
+    
+    /* Animation: Hidden by default */
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* When the JavaScript adds this class, the section fades in */
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- CONTENT STYLING --- */
+.content-container {
+    max-width: 800px;
+}
+
+small {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--accent);
+    display: block;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: 20px;
+}
+
+.main-desc {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+/* Reflection Box (Glassmorphism) */
+.reflection-box {
+    background: var(--glass);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: left;
+    margin: 40px 0;
+}
+
+.reflection-box h4 {
+    color: var(--accent);
+    margin-bottom: 10px;
+}
+
+/* Skill Bars */
+.skill-item {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.bar-bg {
+    width: 100%;
+    max-width: 400px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin-top: 8px;
+    overflow: hidden;
+}
+
+.bar-fill {
+    height: 100%;
+    background: var(--accent);
+    width: 0; /* Animated by JS */
+    transition: width 1.5s ease-out;
+}
+
+/* Navigation Dots */
+.chapter-nav {
+    position: fixed;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+
+.nav-dot {
+    width: 12px;
+    height: 12px;
+    background: rgba(128, 128, 128, 0.5);
+    border-radius: 50%;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-dot.active {
+    background: var(--accent);
+    transform: scale(1.5);
+}
+
+/* The Button */
+.journey-btn {
+    display: inline-block;
+    padding: 15px 40px;
+    background: var(--accent);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    margin-top: 30px;
+    transition: 0.3s;
+}
+
+.journey-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 30px rgba(138, 43, 226, 0.4);
+}

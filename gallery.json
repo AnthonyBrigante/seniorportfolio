@@ -1,0 +1,22 @@
+{
+  "allProjects": [
+    {
+      "title": "Modern Dashboard",
+      "image": "images/dashboard.jpg",
+      "url": "https://your-link-here.com",
+      "blurb": "A clean, data-driven dashboard focusing on dark mode aesthetics and real-time charts."
+    },
+    {
+      "title": "E-Commerce Concept",
+      "image": "images/shop.jpg",
+      "url": "https://your-link-here.com",
+      "blurb": "A minimal shopping experience featuring smooth transitions and a custom checkout flow."
+    },
+    {
+      "title": "Nature Photographer Portfolio",
+      "image": "images/photo.jpg",
+      "url": "https://your-link-here.com",
+      "blurb": "Built for a client to showcase high-resolution imagery with a focus on load speed."
+    }
+  ]
+}

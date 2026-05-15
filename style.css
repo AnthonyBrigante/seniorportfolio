@@ -16,6 +16,13 @@ body {
     transition: background-color 1s ease, color 0.5s ease;
     overflow-x: hidden;
 }
+html {
+    scroll-behavior: smooth; /* Native backup for smooth scrolling */
+}
+
+.journey-btn {
+    cursor: pointer; /* Makes it feel like a real button */
+}
 
 /* --- THE SECRET SAUCE --- */
 section {

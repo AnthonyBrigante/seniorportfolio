@@ -1,6 +1,5 @@
 async function init() {
     try {
-        // 1. Fetch the data from your JSON file
         const response = await fetch('./portfolio.json');
         if (!response.ok) throw new Error("Could not find portfolio.json");
         const data = await response.json();
@@ -8,20 +7,16 @@ async function init() {
         const main = document.getElementById('main-content');
         const nav = document.getElementById('navDots');
 
-        // 2. Build the chapters dynamically
         data.chapters.forEach((ch, index) => {
-            // Create the side navigation dots
             const dot = document.createElement('div');
             dot.className = `nav-dot ${index === 0 ? 'active' : ''}`;
             dot.dataset.target = ch.id;
             dot.onclick = () => document.getElementById(ch.id).scrollIntoView({ behavior: 'smooth' });
             nav.appendChild(dot);
 
-            // Create the section
             const section = document.createElement('section');
             section.id = ch.id;
             
-            // Build the skills HTML if they exist
             let skillsHtml = ch.skills ? `
                 <div class="skills-wrapper">
                     ${ch.skills.map(s => `
@@ -31,18 +26,18 @@ async function init() {
                         </div>`).join('')}
                 </div>` : '';
 
-            // Build the reflection box if it exists
             let reflectionHtml = ch.reflection ? `
                 <div class="reflection-box">
                     <h4>Reflection:</h4>
                     <p>${ch.reflection}</p>
                 </div>` : '';
 
-            // Build the button if it exists
+            // Updated Button Logic: If it's the "Begin Journey" button, we give it a specific ID
             let buttonHtml = ch.buttonText ? `
-                <a href="${ch.buttonLink || '#'}" class="journey-btn">${ch.buttonText}</a>` : '';
+                <a href="${ch.buttonLink || '#'}" class="journey-btn" ${ch.id === 'prologue' ? 'id="start-trigger"' : ''}>
+                    ${ch.buttonText}
+                </a>` : '';
 
-            // Inject the content into the section
             section.innerHTML = `
                 <div class="content-container">
                     <small>CHAPTER ${index}</small>
@@ -56,13 +51,26 @@ async function init() {
             main.appendChild(section);
         });
 
-        // 3. Start watching the scroll
         startObserving();
+        setupButtonClick(); // New function call
         
     } catch (error) {
         console.error("Error building the journey:", error);
-        document.body.innerHTML = `<div style="color:white; padding:50px;">Error loading portfolio.json. Make sure you are using a local server (Live Server).</div>`;
     }
+}
+
+// Function to handle the smooth scroll for the "Begin Journey" button
+function setupButtonClick() {
+    document.getElementById('main-content').addEventListener('click', (e) => {
+        // Look for the "Begin Journey" button specifically
+        if (e.target && e.target.id === 'start-trigger') {
+            e.preventDefault();
+            const year1 = document.getElementById('year1');
+            if (year1) {
+                year1.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    });
 }
 
 function startObserving() {
@@ -72,8 +80,7 @@ function startObserving() {
                 entry.target.classList.add('visible');
                 const id = entry.target.id;
                 
-                // --- COLOR LOGIC ---
-                // This changes the mood based on the chapter ID
+                // Enhanced Color Logic
                 if(id === 'prologue') { 
                     document.body.style.backgroundColor = "#0a0a0c"; 
                     document.body.style.color = "#ffffff"; 
@@ -91,17 +98,14 @@ function startObserving() {
                     document.body.style.color = "#ffffff"; 
                 }
 
-                // Update Nav Dots
                 document.querySelectorAll('.nav-dot').forEach(d => {
                     d.classList.toggle('active', d.dataset.target === id);
                 });
 
-                // Animate Skill Bars
                 entry.target.querySelectorAll('.bar-fill').forEach(bar => {
                     bar.style.width = bar.dataset.width;
                 });
             } else {
-                // Keep it clean: hide sections as you scroll away
                 entry.target.classList.remove('visible');
             }
         });
@@ -110,5 +114,4 @@ function startObserving() {
     document.querySelectorAll('section').forEach(s => observer.observe(s));
 }
 
-// 🔥 CRITICAL: Actually run the code!
 init();

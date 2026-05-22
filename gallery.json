@@ -1,22 +1,216 @@
 {
-  "allProjects": [
+  "juniorYear": [
     {
-      "title": "Modern Dashboard",
-      "image": "images/dashboard.jpg",
-      "url": "https://your-link-here.com",
-      "blurb": "A clean, data-driven dashboard focusing on dark mode aesthetics and real-time charts."
+      "title": "summer-tanment",
+      "image": "images/summer-tanment.jpg",
+      "url": "https://github.com/Y-Ar3MyPanksWet/summer-tanment",
+      "date": "Sep 23, 2024",
+      "blurb": "The spark that started it all. An early exploration into HTML and page layout basics."
     },
     {
-      "title": "E-Commerce Concept",
-      "image": "images/shop.jpg",
-      "url": "https://your-link-here.com",
-      "blurb": "A minimal shopping experience featuring smooth transitions and a custom checkout flow."
+      "title": "spider",
+      "image": "images/spider.jpg",
+      "url": "https://github.com/Y-Ar3MyPanksWet/spider",
+      "date": "Oct 31, 2024",
+      "blurb": "A Halloween-themed CSS design diving into coordinate positioning and structural styling."
     },
     {
-      "title": "Nature Photographer Portfolio",
-      "image": "images/photo.jpg",
-      "url": "https://your-link-here.com",
-      "blurb": "Built for a client to showcase high-resolution imagery with a focus on load speed."
+      "title": "spooky-ghost",
+      "image": "images/spooky-ghost.jpg",
+      "url": "https://github.com/Y-Ar3MyPanksWet/spooky-ghost",
+      "date": "Oct 31, 2024",
+      "blurb": "Experimenting with subtle hover animations and opacity properties to breathe life into CSS shapes."
+    },
+    {
+      "title": "hey-look-ma-im-famous",
+      "image": "images/hey-look-ma-im-famous.jpg",
+      "url": "https://github.com/Y-Ar3MyPanksWet/hey-look-ma-im-famous",
+      "date": "Nov 5, 2024",
+      "blurb": "A personalized layout project focusing on clean typography and embedding media structures."
+    },
+    {
+      "title": "monthly-website-gallery",
+      "image": "images/monthly-website-gallery.jpg",
+      "url": "https://github.com/Y-Ar3MyPanksWet/monthly-website-gallery",
+      "date": "Nov 20, 2024",
+      "blurb": "A dynamic landing page designed to archive monthly layouts in a responsive visual grid."
+    },
+    {
+      "title": "word-salad",
+      "image": "images/word-salad.jpg",
+      "url": "https://github.com/Y-Ar3MyPanksWet/word-salad",
+      "date": "Nov 20, 2024",
+      "blurb": "Stepping into programming logic using JavaScript array parsing and string manipulation mechanics."
+    },
+    {
+      "title": "magic-8-ball",
+      "image": "images/magic-8-ball.jpg",
+      "url": "https://github.com/Y-Ar3MyPanksWet/magic-8-ball",
+      "date": "Dec 2, 2024",
+      "blurb": "A classic randomizer application utilizing mathematical algorithms to output interactive feedback."
+    },
+    {
+      "title": "name-gen",
+      "image": "images/name-gen.jpg",
+      "url": "https://github.com/Y-Ar3MyPanksWet/name-gen",
+      "date": "Dec 20, 2024",
+      "blurb": "A personalized naming generator focusing heavily on customized CSS inputs and aesthetic styling blocks."
+    },
+    {
+      "title": "rock-paper-siccor",
+      "image": "images/rock-paper-siccor.jpg",
+      "url": "https://github.com/Y-Ar3MyPanksWet/rock-paper-siccor",
+      "date": "Jan 17, 2025",
+      "blurb": "A Marvel-themed twist on Rock Paper Scissors tracking state loops and conditional script logic."
+    },
+    {
+      "title": "RandomTestamonialStarter",
+      "image": "images/RandomTestamonialStarter.jpg",
+      "url": "https://github.com/Y-Ar3MyPanksWet/RandomTestamonialStarter",
+      "date": "Feb 6, 2025",
+      "blurb": "Deepening mastery over DOM manipulation arrays to dynamically change user view elements."
+    },
+    {
+      "title": "Postcard-Generator-Starter-Code",
+      "image": "images/Postcard-Generator-Starter-Code.jpg",
+      "url": "https://github.com/Y-Ar3MyPanksWet/Postcard-Generator-Starter-Code",
+      "date": "Feb 11, 2025",
+      "blurb": "An interactive utility converting live text inputs directly into customized virtual postcards."
+    },
+    {
+      "title": "president-website",
+      "image": "images/president-website.jpg",
+      "url": "https://github.com/Y-Ar3MyPanksWet/president-website",
+      "date": "Feb 28, 2025",
+      "blurb": "An informational matrix site organizing semantic data structures cleanly within deep layout models."
+    },
+    {
+      "title": "to-do-list",
+      "image": "images/to-do-list.jpg",
+      "url": "https://github.com/Y-Ar3MyPanksWet/to-do-list",
+      "date": "Feb 28, 2025",
+      "blurb": "An absolute essential utility app testing state tracking and event registration handling."
+    },
+    {
+      "title": "hangman",
+      "image": "images/hangman.jpg",
+      "url": "https://github.com/Y-Ar3MyPanksWet/hangman",
+      "date": "Apr 2, 2025",
+      "blurb": "A complex classic word puzzle featuring state logic, failure parameters, and layout tracking."
+    },
+    {
+      "title": "quizzes-website",
+      "image": "images/quizzes-website.jpg",
+      "url": "https://github.com/Y-Ar3MyPanksWet/quizzes-website",
+      "date": "Apr 25, 2025",
+      "blurb": "Building user testing architectures tracking score accumulation sets dynamically via script."
+    },
+    {
+      "title": "State-Facts-Objects-Practice",
+      "image": "images/State-Facts-Objects-Practice.jpg",
+      "url": "https://github.com/Y-Ar3MyPanksWet/State-Facts-Objects-Practice",
+      "date": "May 9, 2025",
+      "blurb": "An immersive data-mapping practice project accessing deeply nested values within custom multi-tier objects."
+    },
+    {
+      "title": "team-webstie",
+      "image": "images/team-webstie.jpg",
+      "url": "https://github.com/Y-Ar3MyPanksWet/team-webstie",
+      "date": "Jun 5, 2025",
+      "blurb": "A beautifully scalable group catalog utilizing reusable logical templates to map professional cards."
+    },
+    {
+      "title": "bird-toy-thingy",
+      "image": "images/bird-toy-thingy.jpg",
+      "url": "https://github.com/Y-Ar3MyPanksWet/bird-toy-thingy",
+      "date": "Jun 22, 2025",
+      "blurb": "The grand wrap-up of Junior year—deploying reactive elements and flexible structural wrappers."
+    }
+  ],
+  "seniorYear": [
+    {
+      "title": "college",
+      "image": "images/college.jpg",
+      "url": "https://github.com/Y-Ar3MyPanksWet/college",
+      "date": "Sep 22, 2025",
+      "blurb": "A high-fidelity layout platform organizing campus navigational pathways and operational elements."
+    },
+    {
+      "title": "1.01-functions",
+      "image": "images/1.01-functions.jpg",
+      "url": "https://github.com/Y-Ar3MyPanksWet/1.01-functions",
+      "date": "Oct 6, 2025",
+      "blurb": "A pure utility sandbox exploring optimized return metrics, parameters, and variable structural loops."
+    },
+    {
+      "title": "arrays-and-loops-refrshers",
+      "image": "images/arrays-and-loops-refrshers.jpg",
+      "url": "https://github.com/Y-Ar3MyPanksWet/arrays-and-loops-refrshers",
+      "date": "Oct 6, 2025",
+      "blurb": "Fine-tuning looping mechanics and system iteration behaviors to prepare for advanced processing tasks."
+    },
+    {
+      "title": "event-handling",
+      "image": "images/event-handling.jpg",
+      "url": "https://github.com/Y-Ar3MyPanksWet/event-handling",
+      "date": "Oct 8, 2025",
+      "blurb": "Diving deep into modern interface listener events, pointer captures, and custom payload states."
+    },
+    {
+      "title": "ajax-projext",
+      "image": "images/ajax-projext.jpg",
+      "url": "https://github.com/Y-Ar3MyPanksWet/ajax-projext",
+      "date": "Oct 14, 2025",
+      "blurb": "Asynchronous network engineering bridging runtime environments with live remote server infrastructures."
+    },
+    {
+      "title": "2.04",
+      "image": "images/2.04.jpg",
+      "url": "https://github.com/Y-Ar3MyPanksWet/2.04",
+      "date": "Oct 21, 2025",
+      "blurb": "A structured architectural design prototype evaluating rapid interactive component performance."
+    },
+    {
+      "title": "NJIT-jQ-SlideShow-Project-Starter",
+      "image": "images/NJIT-jQ-SlideShow-Project-Starter.jpg",
+      "url": "https://github.com/Y-Ar3MyPanksWet/NJIT-jQ-SlideShow-Project-Starter",
+      "date": "Nov 17, 2025",
+      "blurb": "An animated slideshow engine leveraging custom selectors and timing parameters."
+    },
+    {
+      "title": "5.05-ue-mastery",
+      "image": "images/5.05-ue-mastery.jpg",
+      "url": "https://github.com/Y-Ar3MyPanksWet/5.05-ue-mastery",
+      "date": "Nov 25, 2025",
+      "blurb": "Advancing component-driven development workflows utilizing declarative layout controls."
+    },
+    {
+      "title": "0_Vue_Mastery_Tutorial_Starter",
+      "image": "images/0_Vue_Mastery_Tutorial_Starter.jpg",
+      "url": "https://github.com/Y-Ar3MyPanksWet/0_Vue_Mastery_Tutorial_Starter",
+      "date": "Nov 26, 2025",
+      "blurb": "Stepping cleanly into virtual DOM abstractions, state reactions, and macro reactivity bindings."
+    },
+    {
+      "title": "movie-poster-gallery",
+      "image": "images/movie-poster-gallery.jpg",
+      "url": "https://github.com/Y-Ar3MyPanksWet/movie-poster-gallery",
+      "date": "Dec 10, 2025",
+      "blurb": "A premium media matrix implementing lazy rendering properties and detailed dynamic detail transitions."
+    },
+    {
+      "title": "fathers-website",
+      "image": "images/fathers-website.jpg",
+      "url": "https://github.com/Y-Ar3MyPanksWet/fathers-website",
+      "date": "Apr 16, 2026",
+      "blurb": "A production-grade web deployment built focusing cleanly on pristine semantic rendering layouts."
+    },
+    {
+      "title": "crim-project-new",
+      "image": "images/crim-project-new.jpg",
+      "url": "https://github.com/Y-Ar3MyPanksWet/crim-project-new",
+      "date": "May 15, 2026",
+      "blurb": "The flagship Senior masterwork. High architecture data handling meeting elite UX presentation frameworks."
     }
   ]
 }
